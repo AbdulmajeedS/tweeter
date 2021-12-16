@@ -1,0 +1,32 @@
+header {
+  height: 400px;
+  width: 100%;
+  position: relative;
+  background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+  background-color: rgb(10, 40, 213);
+}
+
+.img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profileImg {
+  margin: auto;
+}
+
+.profileImg img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.name {
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+} 
+ 
