@@ -1,13 +1,13 @@
-$(() => {
+$(document).ready(function() {
   $("#tweet-text").on("keyup keydown", function() {
-    let tweetLength = $(this).val().length;
+    let numberOfCharacters = $(this).val().length;
     let remainder = $(this).siblings(".counter")[0];
-    remainder.value = 140 - tweetLength;
+    remainder.value = 140 - numberOfCharacters;
 
     if (remainder.value < 0) {
-      $remainder.addClass("invalid");
-    } else {
-      $remainder.removeClass("invalid");
+      $(this).nextAll(".counter").css("color", "red");
+        } else {
+      $(this).nextAll(".counter").css("color", "grey");
     }
   });
-}); 
+});
