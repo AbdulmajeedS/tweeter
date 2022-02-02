@@ -4,18 +4,18 @@
 }
 
 .tweet:hover {
-  box-shadow: 5px 10px #4057a1c4;
-  color: rgb(58, 54, 54);
-  border: 3px solid rgb(41, 58, 105);
+  box-shadow: 5px 10px #2449c6c4;
+  color: rgb(83, 81, 81);
+  border: 3px solid rgb(2, 68, 250);
 }
 
 .tweet {
-  background-color: #f4f1ec;
+  background-color: #ffffff;
   height: 280px;
   padding-top: 20px;
   padding-bottom: 20px;
-  border: 3px solid rgb(121, 118, 118);
-  color: grey;
+  border: 3px solid rgb(156, 154, 154);
+  color: rgb(151, 139, 139);
   font-family: 'Source Sans Pro';
   margin-bottom: 2em;
 }
@@ -23,14 +23,14 @@
 .tweetData {
   padding-bottom: 20px;
 
-  border-bottom: 3px solid rgb(121, 118, 118);
+  border-bottom: 3px solid rgb(92, 89, 89);
   font-size: 20px;
   margin: 20px;
 }
 
 .handle{
   display: none;
-  color: darkblue;
+  color: rgb(3, 3, 140);
   opacity: 30%;
   float: right;
   font-size: 35px;
