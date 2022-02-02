@@ -1,37 +1,35 @@
-form {
-  position: relative;
-  border-bottom: 3px solid black;
-  font-size: 1.2em;
-  margin-top: 5%;
+button {
+  background-color:#4056A1;
+  color: white;
 }
 
-button{
-  background-color: rgb(142, 168, 254);
-  color: rgb(0, 0, 0);
-  border: 2px solid black;
-  padding: 3px 10px;
-  left: 0;
+button:hover {
+  background-color: #27345f;
 }
-button, .counter{
-  position: absolute;
-  top: 150%;
-  font-family: "Bungee";
+input {
+  border: 0 none;
+  outline: none;  
+  background-color: transparent;
+  width: 100%
 }
-
-::placeholder{
-  font-style: italic;
-}
-
-.counter{
-  right: 0;
-}
-
-#tweet-text {
-  background: transparent;
-  width: 100%;
-  border: none;
-  border-style: none;
-  resize: none;
+.input-box {
+  font-family: 'Sans Pro';
+  border: 0 none;
+  border-bottom: 5px solid rgb(70, 68, 68);
+  padding: 10px 10px;
   outline: none;
-  margin-bottom: -10px;
+}
+.counter, .input-box {
+  color: rgb(70, 68, 68);
+}
+.bottomline {  
+  display: flex;
+  font-family: 'Bungee';
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 10px;
+}
+
+.counter.error {
+  color: rgb(255, 0, 0);
 }

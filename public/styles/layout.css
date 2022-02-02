@@ -5,6 +5,7 @@
  */
  html {
   box-sizing: border-box;
+  margin-bottom: 0.5rem;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -13,19 +14,29 @@
  * Global layout stuff
  */
 body {
-  color: #545149;
+  color: #FFFF;
   background-color: #f4f1ec;
-  font-size: 24px;
+  /* font-size: 24px;  */
   font-family: 'Source Sans Pro', sans-serif;
+  /* border: 2px dashed red; */
 }
 
 /*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */ 
- */
 
+    
+        
+          
+    
+
+        
+    
+    @@ -32,5 +32,5 @@ body {
+  
+ * Additional CSS can be defined below or in other CSS files, as per instructions
+ */
 .container {
-  width: 90%;
+  max-width: 90%;
   margin: auto;
-  font-family: "Source Sans Pro", sans-serif;
-} 
+  color: black;
+  /* border: 2px dashed brown; */
+}

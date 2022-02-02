@@ -1,4 +1,3 @@
-$(document).ready(function() {
   // --- our code goes here ---
   $("#tweet-text").on('keyup', function() {
     // console.log("ITS WORKING");
@@ -17,6 +16,4 @@ $(document).ready(function() {
       $tc.addClass('error');
     }
 
-  })
-
-});
+  });
