@@ -3,7 +3,7 @@
   top: 0;
   z-index: 1;
   color: #ffffff;
-  background-color: #253a49;
+  background-color: #2943d3;
   height: 110px;
   width: 100%;
   padding-right: 1.5em;
@@ -31,7 +31,7 @@
 }
 #arrows {
   padding-left: 80px;
-  color: darkcyan;
+  color: rgb(255, 0, 0);
   /* justify-content: flex-end; */
 }
 #arrows:hover {
