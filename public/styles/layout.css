@@ -5,38 +5,35 @@
  */
  html {
   box-sizing: border-box;
-  margin-bottom: 0.5rem;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
+  
 /*
  * Global layout stuff
  */
+
 body {
-  color: #FFFF;
-  background-color: #f4f1ec;
-  /* font-size: 24px;  */
-  font-family: 'Source Sans Pro', sans-serif;
-  /* border: 2px dashed red; */
+  background-color: #b6e5f3;
+  background-image: url("../images/45-degree-fabric-dark\ \(1\).png");
+  background-attachment: fixed;
+  background-position: center;
+  color: rgb(46, 33, 9);
+  font-size: 25px;
+  font-family: "Source Sans Pro";
 }
 
+.container {
+  width: 90%; /* can use 40rem for slimmer column */
+  margin: auto;
+  background-color: #ffffff9e;
+  padding-top: 0.1rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 20px;
+}
 /*
-
-    
-        
-          
-    
-
-        
-    
-    @@ -32,5 +32,5 @@ body {
-  
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
-.container {
-  max-width: 90%;
-  margin: auto;
-  color: black;
-  /* border: 2px dashed brown; */
-}
