@@ -2,17 +2,17 @@ header {
   height: 400px;
   width: 100%;
   position: relative;
+  background-color: #3606a5;
   background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
-  background-color: rgb(10, 40, 213);
 }
 
-.img{
+.img {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.profileImg {
+.profilePic {
   margin: auto;
 }
 
@@ -28,5 +28,4 @@ header {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-} 
- 
+}

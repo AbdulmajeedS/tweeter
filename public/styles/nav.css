@@ -39,6 +39,6 @@ nav strong {
   display: flex;
   align-items: flex-end;
   flex-direction: column;
-  justify-self: space-around;
+  justify-content: space-around;
   color: red;
 }
