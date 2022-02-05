@@ -15,51 +15,39 @@
  * Global layout stuff
  */
 body {
-  background-color: #b6e5f3;
+  background-color: #ffffff;
   background-image: url("../images/45-degree-fabric-dark\ \(1\).png");
   background-attachment: fixed;
   background-position: center;
-  color: rgb(46, 33, 9);
+  color: black;
   font-size: 25px;
   font-family: "Source Sans Pro";
 }
 .container {
-  width: 90%; /* can use 40rem for slimmer column */
+  width: 90%;
   margin: auto;
-  background-color: #ffffff9e;
+  background-color: #ffffff;
   padding-top: 0.1rem;
   padding-bottom: 0.5rem;
   margin-bottom: 20px;
 }
-
 @media (min-width: 1024px) {
-  /* Write CSS rules that target Laptop/Desktop screen sizes and beyond */
   #sass {
     display: flex;
-    /* align-items: center; */
-    justify-content: center;
+    align-content: space-evenly;
+    justify-content: space-evenly;
   }
   #mainCon {
     margin-top: 5em;
   }
-  #avatar {
-    align-self: flex-start;
-    padding-left: 2em;
-  }
-  #name {
-    align-self: flex-start;
-    padding-left: 5.3em;
-  }
 
   #headers {
-    margin-top: 5em;
-    /* background-color: darkgoldenrod; */
+    margin-top: 5em;  
     width: 350px;
     margin-left: 25px;
     margin-right: 30px;
   }
   #navBar {
-    /* opacity: 0; */
-    background-color: #253a49;
+    background-color: #0095ff;
   }
 }

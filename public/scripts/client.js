@@ -5,24 +5,28 @@ $(document).ready(function () {
         renderTweets(response);
       });
   };
-
   loadTweets();
   $('#errorPrompt').hide();
+
+  $("#navWrite").on('click', () => {
+    console.log('click')
+    $("#tweet-text").focus();
+  })
+
   const renderTweets = (tweetData) => {
-    $("#tweet-container").empty();
+    $("#tweets-container").empty();
     for (let tweets of tweetData) {
       let $tweet = createTweetElement(tweets);
       $("#tweets-container").prepend($tweet);
     }
   };
 
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
   const createTweetElement = (tweetData) => {
-    const escape = function (str) {
-      let div = document.createElement("div");
-      div.appendChild(document.createTextNode(str));
-      return div.innerHTML;  
-    };
-
     const $tweeter = `
   <article>
 <div id="tweetDiv">
@@ -49,17 +53,13 @@ $(document).ready(function () {
   </footer>
 </div>
 </article>`;
-    // console.log($tweeter)
     return $tweeter;
   };
-
   $('#scroller').on('submit', function (evt) {
     evt.preventDefault();
-    // console.log(this)
     const tweet = $("#tweet-text").val().trim().length;
-
     if (!tweet) {
-      $('#errorPrompt').text("Tweet cannot be empty.. don't be shy, we don't bite :) ");
+      $('#errorPrompt').text("Tweet cannot be empty!");
       $('#errorPrompt').slideDown("slow");
       $('#errorPrompt').delay(3500).slideUp("slow");
       return;
@@ -70,16 +70,15 @@ $(document).ready(function () {
       $('#errorPrompt').delay(5000).slideUp("slow");
       return;
     } else {
-
       const val = $(this).serialize();
       $.ajax("/tweets", {
         method: "POST",
         data: val,
       })
         .then(() => {
-          // $('#errorPrompt').hide();
           loadTweets();
           $("#tweet-text").val("");
+          $('.counter').text(140);
         });
     }
   });

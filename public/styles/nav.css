@@ -2,23 +2,19 @@
   position: sticky;
   top: 0;
   z-index: 1;
-  color: #ffffff;
+  color: black;
   height: 110px;
   width: 100%;
-  padding-right: 1.5em;
+  padding-right: 1.5em;  
   padding-left: 1.5em;
   font-family: "Bungee";
 }
 .header {
   float: left;
   display: flex;
-  color: white;
   padding-top: 30px;
 }
-/* .headers {
-  margin-top: 110px;
-} */
-#navWrite {
+#navWrite {  
   float: right;
   padding-top: 30px;
   display: block;
@@ -28,14 +24,18 @@
 }
 #arrows {
   padding-left: 80px;
-  color: darkgoldenrod;
-  /* justify-content: flex-end; */
+  color: rgb(255, 0, 0);
 }
 #arrows:hover {
   color: darkcyan;
 }
-
 #bird {
   padding-right: 10px;
-  color: darkgoldenrod;
+  color: rgb(191, 0, 255);
+}
+
+@media (min-width: 1024px) {
+  #navBar {
+    color: white;
+  }
 }
