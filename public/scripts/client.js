@@ -1,13 +1,13 @@
-$(document).ready(function() {
-  const loadTweets = function() {
+$(document).ready(function () {
+  const loadTweets = function () {
     $.ajax("/tweets")
-      .then(function(response) {
+      .then(function (response) {
         renderTweets(response);
       });
   };
+
   loadTweets();
   $('#errorPrompt').hide();
-
   const renderTweets = (tweetData) => {
     $("#tweet-container").empty();
     for (let tweets of tweetData) {
@@ -17,11 +17,12 @@ $(document).ready(function() {
   };
 
   const createTweetElement = (tweetData) => {
-    const escape = function(str) {
+    const escape = function (str) {
       let div = document.createElement("div");
       div.appendChild(document.createTextNode(str));
-      return div.innerHTML;
+      return div.innerHTML;  
     };
+
     const $tweeter = `
   <article>
 <div id="tweetDiv">
@@ -34,7 +35,7 @@ $(document).ready(function() {
   </header>
   <main id="tweetBody">
     <span>${escape(tweetData.content["text"])}</span>
-    <hr />
+    <hr>
   </main>
   <footer class="newfooter">
     <div class="divTweet">
@@ -52,7 +53,7 @@ $(document).ready(function() {
     return $tweeter;
   };
 
-  $('#scroller').on('submit', function(evt) {
+  $('#scroller').on('submit', function (evt) {
     evt.preventDefault();
     // console.log(this)
     const tweet = $("#tweet-text").val().trim().length;
@@ -72,10 +73,11 @@ $(document).ready(function() {
 
       const val = $(this).serialize();
       $.ajax("/tweets", {
-        method: "POST", data: val,
+        method: "POST",
+        data: val,
       })
         .then(() => {
-          $('#errorPrompt').hide();
+          // $('#errorPrompt').hide();
           loadTweets();
           $("#tweet-text").val("");
         });

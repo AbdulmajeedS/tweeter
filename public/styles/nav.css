@@ -3,21 +3,18 @@
   top: 0;
   z-index: 1;
   color: #ffffff;
-  background-color: #2943d3;
   height: 110px;
   width: 100%;
   padding-right: 1.5em;
   padding-left: 1.5em;
   font-family: "Bungee";
 }
-
 .header {
   float: left;
   display: flex;
   color: white;
   padding-top: 30px;
 }
-
 /* .headers {
   margin-top: 110px;
 } */
@@ -31,9 +28,14 @@
 }
 #arrows {
   padding-left: 80px;
-  color: rgb(255, 0, 0);
+  color: darkgoldenrod;
   /* justify-content: flex-end; */
 }
 #arrows:hover {
+  color: darkcyan;
+}
+
+#bird {
+  padding-right: 10px;
   color: darkgoldenrod;
 }
