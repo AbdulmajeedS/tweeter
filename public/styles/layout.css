@@ -11,9 +11,6 @@
 *:after {
   box-sizing: inherit;
 }
-/*
- * Global layout stuff
- */
 body {
   background-color: #ffffff;
   background-image: url("../images/45-degree-fabric-dark\ \(1\).png");
