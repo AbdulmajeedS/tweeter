@@ -70,6 +70,7 @@ article {
   justify-content: space-between;
 }
 #tweetBody {
+  word-break: break-all;
   padding-top: 15px;
   margin-left: 10px;
 }
