@@ -43,10 +43,9 @@ form {
 }
 article:hover {
   transform: scale(1.04, 1);
-  box-shadow: #e90b81;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 article {
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   border: 4px solid black;
   color: rgb(0, 0, 0);
   margin: 10px;

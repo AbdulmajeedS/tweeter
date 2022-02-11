@@ -4,7 +4,6 @@
 }
 
 .tweet:hover {
-  box-shadow: 5px 10px #ff0000c4;
   color: rgb(83, 81, 81);
   border: 3px solid rgb(2, 68, 250);
 }
